@@ -2,7 +2,6 @@
 # Scrivi un programma che chieda all'utente se vuole inserire un numero o una stringa.
 # Se l'utente sceglie di inserire un numero, il programma deve determinare se il numero è pari o dispari e stampare il risultato.
 # Se l'utente sceglie di inserire una stringa, il programma deve stampare ogni carattere della stringa su una nuova riga.  
-
 while True:
     scelta = input("Vuoi inserire un 'numero' o una 'stringa'? ").strip().lower()
 
@@ -28,29 +27,28 @@ while True:
         continue
 
     # Chiede se ripetere
-# Chiedi se ripetere
     ripeti = input("Vuoi ripetere? (s/n): ").strip().lower()
     if ripeti != "s":
         print("Programma terminato.")
         break
     
     
+    
 #ESERCIZIO 2:
-
 def è_primo(n):
-    if n < 2:
+    if n < 2:  #i numeri minori di 2 non sono primi
         return False
-    for i in range(2, int(n**0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):  #controlla i divisori fino alla radice quadrata di n
         if n % i == 0:
             return False
     return True
 
-while True:
+while True:  #ciclo principale
     inizio = int(input("Inserisci il numero di inizio intervallo: "))
     fine = int(input("Inserisci il numero di fine intervallo: "))
 
-    numeri_primi = []
-    numeri_non_primi = []
+    numeri_primi = []  #liste vuote
+    numeri_non_primi = []  #liste vuote
 
     for num in range(inizio, fine + 1):
         if è_primo(num):
