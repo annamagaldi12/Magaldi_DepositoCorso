@@ -1,0 +1,25 @@
+class Automobile:                           # dichiaro la classe
+  numero_di_ruote = 4                       # attributo di classe
+  def __init__(self, marca, modello):       # metodo costruttore
+        self.marca = marca                  # attributo di istanza
+        self.modello = modello              # attributo di istanza
+  def stampa_info(self):                    # metodo di istanza
+        print("L'automobile è una", self.marca, self.modello)
+        
+        
+#Creazione oggetti da una classe
+auto1 = Automobile("Fiat", "500")    # crea un oggetto di Automobile
+auto2 = Automobile("BMW", "X3")      # crea un altro oggetto di Automobile
+auto1.stampa_info()                  # stampa "L'automobile è una Fiat 500"
+auto2.stampa_info()                  # stampa "L'automobile è una BMW X3"
+
+#__Init__ method
+class Persona:
+    def __init__(self, nome, eta):
+        self.nome = nome   # Attributo per memorizzare il nome
+        self.eta = eta     # Attributo per memorizzare l'età
+
+# Creazione di un oggetto Persona
+p = Persona("Pippo", 30)
+print(p.nome)  # Output: Pippo
+print(p.eta)   # Output: 30
