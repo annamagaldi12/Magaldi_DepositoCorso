@@ -1,5 +1,5 @@
-from CLASSE_BASE import Elettrodomestico
-from SOTTOCLASSI import Lavatrice, Frigorifero, Forno
+from ClasseBase import Elettrodomestico
+from Sottoclassi import Lavatrice, Frigorifero, Forno
 
 #4.CLASSE OFFICINA:
 class Officina:

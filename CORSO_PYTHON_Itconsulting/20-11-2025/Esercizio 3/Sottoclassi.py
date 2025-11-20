@@ -1,6 +1,5 @@
 
-from CLASSE BASE import Elettrodomestico
-
+from ClasseBase import Elettrodomestico
 #2. SOTTOCLASSI:
 #Lavatrice
 class Lavatrice(Elettrodomestico):
